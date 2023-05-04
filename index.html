@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Information Registration</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="validation.js"></script>
+  </head>
+  <body>
+    <h1>Student Information Registration</h1>
+    <form
+      name="registrationForm"
+      onsubmit="return validateForm()"
+      method="post"
+    >
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required />
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <br />
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" required />
+      <br />
+      <label for="dateOfBirth">Date of Birth:</label>
+      <input type="date" id="dateOfBirth" name="dateOfBirth" required />
+      <br />
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">--Please select--</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+      <br />
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" required></textarea>
+      <br />
+      <label for="course">Course:</label>
+      <input type="text" id="course" name="course" required />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <script src="index.js"></script>
+  </body>
+</html>
